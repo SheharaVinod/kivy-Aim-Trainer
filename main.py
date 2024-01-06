@@ -5,7 +5,7 @@ Config.set("kivy", "exit_on_escape", "0")
 Config.set("input", "mouse", "mouse,disable_multitouch") # NOQA
 from kivymd.app import MDApp  # NOQA
 from os.path import exists  # NOQA
-
+from FrontEnd import RootWindow
 
 class KivyAimTrainer(MDApp):
     def __init__(self, **kwargs):
@@ -14,7 +14,7 @@ class KivyAimTrainer(MDApp):
         self.icon = "assert/image/Aim.png"
 
     def build(self):
-        return
+        return RootWindow()
 
 
 if __name__ == '__main__':
